@@ -38,6 +38,8 @@ namespace LearnYouTubeC
             Mathe();
             Cast();
             aleatorio();
+            operadoresRelacionales();
+            looping();
 
         }
 
@@ -94,6 +96,110 @@ namespace LearnYouTubeC
         {
             Random rnd = new Random();
             Console.WriteLine("Numero aleatorio entre 1 y 100 : ( " + (rnd.Next(1, 100)) + " )");
+        }
+
+        public static void operadoresRelacionales()
+        {
+            // ---------- CONDITIONALS ----------
+
+            // Relational Operators : > < >= <= == !=
+            // Logical Operators : && || ^ !
+
+            // If Statement
+            int age = 17;
+
+            if ((age >= 5) && (age <= 7))
+            {
+                Console.WriteLine("Go to elementary school");
+            }
+            else if ((age > 7) && (age < 13))
+            {
+                Console.WriteLine("Go to middle school");
+            }
+            else
+            {
+                Console.WriteLine("Go to high school");
+            }
+
+            if ((age < 14) || (age > 67))
+            {
+                Console.WriteLine("You shouldn't work");
+            }
+
+            Console.WriteLine("! true = " + (!true));
+
+            bool canDrive = age >= 16 ? true : false;
+
+            switch(age)
+            {
+                case 0:
+                    Console.WriteLine("Infant");
+                    break;
+                case 1:
+                    Console.WriteLine("Adult");
+                    break;
+                case 2:
+                    Console.WriteLine("Toddler");
+                    goto Cute;
+                default:
+                    Console.WriteLine("Dead");
+                    break;
+            }
+        Cute:
+            Console.WriteLine("Toddler are cute.");
+        }
+        public static void looping ()
+        {
+            int i = 0;
+
+            while (i < 10)
+            {
+                // If i = 7 then skip the rest of the code and start with i = 8
+                if (i == 7)
+                {
+                    i++;
+                    continue;
+                }
+
+                // Jump completely out of the loop if i = 9
+                if (i == 9)
+                {
+                    break;
+                }
+
+                // You can't convert an int into a bool : Print out only odds
+                if ((i % 2) > 0)
+                {
+                    Console.WriteLine(i);
+                }
+                i++;
+            }
+
+            // The do while loop will go through the loop at least once
+            string guess;
+            do
+            {
+                Console.WriteLine("Guess a Number ");
+                guess = Console.ReadLine();
+            } while (!guess.Equals("15")); // How to check String equality
+
+            // Puts all changes to the iterator in one place
+            for (int j = 0; j < 10; j++)
+            {
+                if ((j % 2) > 0)
+                {
+                    Console.WriteLine(j);
+                }
+            }
+
+            // foreach cycles through every item in an array or collection
+            string randStr = "Here are some random characters";
+
+            foreach (char c in randStr)
+            {
+                Console.WriteLine(c);
+            }
+
         }
     }
 }
