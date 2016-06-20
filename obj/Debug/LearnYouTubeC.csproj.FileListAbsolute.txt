@@ -7,3 +7,6 @@ C:\Users\eisne\Documents\GitHub\TutoUPYouTubeC1\LearnYouTubeC\LearnYouTubeC\obj\
 C:\Users\eisne\Documents\GitHub\TutoUPYouTubeC1\LearnYouTubeC\bin\Debug\LearnYouTubeC.exe.config
 C:\Users\eisne\Documents\GitHub\TutoUPYouTubeC1\LearnYouTubeC\obj\Debug\LearnYouTubeC.exe
 C:\Users\eisne\Documents\GitHub\TutoUPYouTubeC1\LearnYouTubeC\obj\Debug\LearnYouTubeC.pdb
+C:\Users\eisne\Documents\GitHub\TutoUPYouTubeC1\LearnYouTubeC\bin\Debug\LearnYouTubeC.exe
+C:\Users\eisne\Documents\GitHub\TutoUPYouTubeC1\LearnYouTubeC\bin\Debug\LearnYouTubeC.pdb
+C:\Users\eisne\Documents\GitHub\TutoUPYouTubeC1\LearnYouTubeC\obj\Debug\LearnYouTubeC.csprojResolveAssemblyReference.cache

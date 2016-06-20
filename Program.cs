@@ -35,11 +35,12 @@ namespace LearnYouTubeC
             anotherName = "Phillippe";
 
             Console.WriteLine("Another Name " + anotherName);
-            Math();
+            Mathe();
+            Cast();
 
         }
 
-        public static void Math()
+        public static void Mathe()
         {
             // ---------- MATH ----------
 
@@ -61,6 +62,31 @@ namespace LearnYouTubeC
             Console.WriteLine("i *= 2 " + (i *= 2));
             Console.WriteLine("i /= 2 " + (i /= 2));
             Console.WriteLine("i %= 2 " + (i %= 2));
+        }
+
+        public static void Cast ()
+        {
+            // Casting : If no magnitude is lost casting happens automatically, but otherwise it must be done
+            // like this
+
+            double pi = 3.14;
+            float intPi = (float)pi; // put the data type to convert to between braces
+
+            // Math Functions
+            // Acos, Asin, Atan, Atan2, Cos, Cosh, Exp, Log, Sin, Sinh, Tan, Tanh
+            double number1 = 10.5;
+            double number2 = 15;
+
+            Console.Write(pi);
+            Console.WriteLine("Valor real de pi " + intPi);
+            Console.WriteLine("Math.Abs(number1) " + (Math.Abs(number1)));
+            Console.WriteLine("Math.Ceiling(number1) " + (Math.Ceiling(number1)));
+            Console.WriteLine("Math.Floor(number1) " + (Math.Floor(number1)));
+            Console.WriteLine("Math.Max(number1, number2) " + (Math.Max(number1, number2)));
+            Console.WriteLine("Math.Min(number1, number2) " + (Math.Min(number1, number2)));
+            Console.WriteLine("Math.Pow(number1, 2) " + (Math.Pow(number1, 2)));
+            Console.WriteLine("Math.Round(number1) " + (Math.Round(number1)));
+            Console.WriteLine("Math.Sqrt(number1) " + (Math.Sqrt(number1)));
         }
     }
 }
