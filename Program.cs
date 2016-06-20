@@ -37,6 +37,7 @@ namespace LearnYouTubeC
             Console.WriteLine("Another Name " + anotherName);
             Mathe();
             Cast();
+            aleatorio();
 
         }
 
@@ -87,6 +88,12 @@ namespace LearnYouTubeC
             Console.WriteLine("Math.Pow(number1, 2) " + (Math.Pow(number1, 2)));
             Console.WriteLine("Math.Round(number1) " + (Math.Round(number1)));
             Console.WriteLine("Math.Sqrt(number1) " + (Math.Sqrt(number1)));
+        }
+
+        public static void aleatorio()
+        {
+            Random rnd = new Random();
+            Console.WriteLine("Numero aleatorio entre 1 y 100 : ( " + (rnd.Next(1, 100)) + " )");
         }
     }
 }
